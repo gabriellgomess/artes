@@ -1,1 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .btn{
             width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            user-select: none;
+            border-radius: 30px;
+            box-shadow: 0 5px 10px #43265eaa;
+            background-image: linear-gradient(to bottom, #d600a4 50%, #3c002f);
+            position: relative;
+        }
+        .btn::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 170px;
+            height: 30px;
+            left: calc(50% - 85px);
+            border-radius: 10px 10px 20px 20px;
+            background-image: linear-gradient(to bottom, #ffffffaa, #ffffff11);
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class="btn">by Gabriel &reg;</button>
+    
+</body>
+</html>
