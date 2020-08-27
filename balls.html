@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls animation</title>
+    <style>
+        .wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ball{
+            position: absolute;
+            top: 0;
+            left: -2em;
+            border-radius: 50px;
+        }
+        #ball-1{
+            padding: 12px;
+            background-color: #f8049c;
+            animation: anime-1 1.6s ease-in-out infinite;
+            animation-delay: 0;
+        }
+        #ball-2{
+            padding: 10px;
+            background-color: #5900ff;
+            animation: anime-2 1.6s ease-in-out infinite;
+            animation-delay: 0.2s;
+        }
+        #ball-3{
+            padding: 8px;
+            background-color: #00f8ff;
+            animation: anime-3 1.6s ease-in-out infinite;
+            animation-delay: 0.4s;
+        }
+
+        @keyframes anime-1 {
+            50%{top: -5em;}
+            100%{top: 0;}
+        }
+
+        @keyframes anime-2 {
+            50%{top: -4em;}
+            100%{top: 0;}
+        }
+
+        @keyframes anime-3 {
+            50%{top: -3em;}
+            100%{top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="loading">
+            <div id="ball-1" class="ball"></div>
+            <div id="ball-2" class="ball"></div>
+            <div id="ball-3" class="ball"></div>
+        </div>
+    </div>    
+</body>
+</html>
